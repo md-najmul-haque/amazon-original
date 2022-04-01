@@ -34,8 +34,8 @@
     color: #FF9900;
 }
 
-.delete-container {
-    background-color: #EB5757;
+.delete-button {
+    background-color: rgba(235, 87, 87, 0.3);
     width: 55px;
     height: 55px;
     border-radius: 50%;

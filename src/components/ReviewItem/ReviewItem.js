@@ -19,7 +19,7 @@ const ReviewItem = (props) => {
                     <p> <small>Quantity: {quantity}</small> </p>
                 </div>
                 <div className='delete-container'>
-                    <button onClick={() => removeProduct(product)}> <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon> </button>
+                    <button className='delete-button' onClick={() => removeProduct(product)}> <FontAwesomeIcon className='delete-icon' icon={faTrashAlt}></FontAwesomeIcon> </button>
 
                 </div>
 
