@@ -1,5 +1,5 @@
 // use local storage to manage cart data
-const addToDb = id =>{
+/* const addToDb = id =>{
     let shoppingCart = {};
 
     //get the shopping cart from local storage
@@ -39,4 +39,4 @@ export {
     addToDb, 
     removeFromDb,
     deleteShoppingCart
-}
+} */

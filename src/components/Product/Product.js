@@ -1,9 +1,16 @@
 import React from 'react';
+import { removeFromDb } from '../../utilities/Db';
 import './Product.css'
 
 const Product = (props) => {
     const { addToCart, product } = props
-    const { name, img, seller, ratings, price } = product
+    const { name, img, seller, ratings, price, id } = product
+
+    const removeFromCart = id => {
+
+        removeFromDb(id);
+    }
+
     return (
         <div className='product-container'>
             <img src={img} alt=''></img>
@@ -16,6 +23,7 @@ const Product = (props) => {
                 <p className='rating'>Rating: {ratings}</p>
             </div>
             <button onClick={() => addToCart(product)} className='cart-button'>Add to Cart</button>
+            <button onClick={() => removeFromCart(id)}>Remove</button>
 
 
         </div>
