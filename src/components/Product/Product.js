@@ -6,10 +6,10 @@ const Product = (props) => {
     const { addToCart, product } = props
     const { name, img, seller, ratings, price, id } = product
 
-    const removeFromCart = id => {
+    // const removeFromCart = id => {
 
-        removeFromDb(id);
-    }
+    //     removeFromDb(id);
+    // }
 
     return (
         <div className='product-container'>
@@ -23,7 +23,7 @@ const Product = (props) => {
                 <p className='rating'>Rating: {ratings}</p>
             </div>
             <button onClick={() => addToCart(product)} className='cart-button'>Add to Cart</button>
-            <button onClick={() => removeFromCart(id)}>Remove</button>
+            {/* <button onClick={() => removeFromCart(id)}>Remove</button> */}
 
 
         </div>
